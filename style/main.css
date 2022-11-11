@@ -1,0 +1,226 @@
+:root{
+    --main-color: #20c997;
+    --border: #20c997;
+    --transition: .5s;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* navbar */
+.header .lists{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+    align-items: center;
+    text-align: center;
+}
+.header .lists h1{
+    color: #fff;
+    width: 20%;
+    font-weight: bold;
+}
+.header .lists .list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.header .lists .list a{
+    color: #fff;
+    font-weight: bold;
+    
+}
+.header .lists .list .active{
+    color: var(--main-color);
+    
+}
+.header .lists .list a:hover{
+    color: var(--main-color);
+}
+/* end navbar */
+
+/* intro */
+.intro{
+    height: calc(100vh - 55px);
+    background-image: url(https://k.top4top.io/p_2459v763x1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome{
+    height: calc(100vh - 55px);
+    background-color: rgba(0, 0, 0, 0.652);
+}
+.text-mess{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    /* translate transform: (50%,50%); */
+    text-align: center;
+    color: #fff;
+}
+.text-mess h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.text-mess h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 2rem 0;
+
+}
+.text-mess p{
+    margin: 3rem 0;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+.intro .welcome #btn a{
+    border: .2rem solid #20c997;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-weight: bold;
+    letter-spacing: .15rem;
+    color: #000;
+}
+/* end intro */
+
+/* about */
+.about {
+    padding: 2rem 5%;
+
+}
+.about .content-text-about {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+
+.about .content-text-about h3::after {
+    content: "About me";
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    left: 0%;
+    text-align: center;
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+.about .content-text-about h3{
+    padding-bottom: 30px;
+}
+.about .about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.about .about-me .prev{
+    width: 500px;
+    
+}
+.about .about-me .prev h4{
+    font-size: 2rem;
+}
+.about .about-me .prev p{
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+.about .about-me .me-info {
+    width: 500px;
+    
+}
+.about .about-me .me-info .un-border{
+    border: #fff;
+    margin-bottom: 30px;
+}
+.about .about-me .me-info h5 {
+    font-size: 1rem;
+    padding: 1rem 0;
+    border-bottom: .1rem solid var(--main-color);
+}
+
+
+#btn a{
+    color: #fff;
+    border: 3px solid #20c997;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    
+} 
+.number{
+    position: absolute;
+    right: 30%;
+    display: flex;
+    font-size: 25px;
+}
+/* end about */
+
+/* what i do */
+.service {
+    background-color: #f8f9fa;
+    padding: 2rem 10%;
+}
+.service .content-text-service {
+    text-align: center;
+    margin: 10rem 0;
+    position: relative;
+    /* overflow: hidden; */
+}
+.service .content-text-service h3 {
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+}
+section h3 {
+    margin: 10rem 0;
+    font-size: 3rem;
+    position: relative;
+}
+.service .content-text-service::after {
+    content: "service";
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    left: 0%;
+    text-align: center;
+    font-size: 9rem;
+    color: rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+.service .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service .skills-container .skill {
+    display: flex;
+    width: 50%;
+    padding: 3rem 2rem;
+}
+.service .skills-container .skill .icon {
+    color: var(--main-color);
+    background-color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    height: fit-content;
+}
